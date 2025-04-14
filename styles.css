@@ -1,0 +1,124 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Share Tech Mono', monospace;
+  color: #ffffff;
+  background: #0a0a1a;
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: radial-gradient(circle at bottom right, #8e2de2, #4a00e0, #0a0a1a);
+  overflow: hidden;
+}
+
+.hero-content {
+  text-align: center;
+  border: 2px solid #9a6bff;
+  padding: 2rem;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin: 1rem 0;
+  color: #bbbbbb;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #9a6bff;
+  color: #fff;
+  transition: background 0.3s;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background: #9a6bff30;
+}
+
+.diamond {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  transform: rotate(45deg);
+}
+
+/* Scroll down icon */
+.scroll-down {
+  position: absolute;
+  bottom: 2rem;
+  font-size: 2rem;
+  opacity: 0.7;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+/* About + Projects Section */
+.about-projects {
+  padding: 4rem 2rem;
+  background: #0b0b1e;
+}
+
+.block {
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.block .icon {
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+  color: #9a6bff;
+  top: 0.25rem;
+}
+
+.block h2 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.block p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #dddddd;
+  margin-bottom: 1rem;
+}
